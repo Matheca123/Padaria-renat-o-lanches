@@ -1,11 +1,11 @@
-/* Resetando margens e preenchimentos padrão */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Definindo a fonte padrão */
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -13,7 +13,6 @@ body {
     color: #333;
 }
 
-/* Cabeçalho */
 header {
     background-color: #f05d23;
     color: white;
@@ -30,7 +29,13 @@ header h2 {
     margin-top: 10px;
 }
 
-/* Seção Quem Somos */
+img {
+    max-width: 100%;  
+    margin: 0 auto;
+    display: flex;
+    justify-content: end;
+}
+
 .quemSomos {
     padding: 20px;
     background-color: #fff;
@@ -51,7 +56,6 @@ header h2 {
     text-align: justify;
 }
 
-/* Cardápio */
 .cardapio {
     display: flex;
     justify-content: space-between;
@@ -81,7 +85,6 @@ header h2 {
     margin-bottom: 10px;
 }
 
-/* Rodapé */
 footer {
     background-color: #f05d23;
     color: white;
@@ -99,7 +102,6 @@ footer p {
     line-height: 1.6;
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
     .cardapio {
         flex-direction: column;
