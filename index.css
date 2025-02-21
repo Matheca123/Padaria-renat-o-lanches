@@ -1,0 +1,113 @@
+/* Resetando margens e preenchimentos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Definindo a fonte padrão */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #f05d23;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3rem;
+}
+
+header h2 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+/* Seção Quem Somos */
+.quemSomos {
+    padding: 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.quemSomos h2 {
+    font-size: 2rem;
+    color: #f05d23;
+    margin-bottom: 10px;
+}
+
+.quemSomos p {
+    font-size: 1.1rem;
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+/* Cardápio */
+.cardapio {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.cardapio div {
+    width: 30%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cardapio h2 {
+    font-size: 1.8rem;
+    color: #f05d23;
+    margin-bottom: 15px;
+}
+
+.cardapio ul {
+    list-style-type: none;
+}
+
+.cardapio li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #f05d23;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+footer p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .cardapio {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cardapio div {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
